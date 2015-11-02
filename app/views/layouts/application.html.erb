@@ -4,11 +4,29 @@
   <title>Keyhole</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header id="main_navigation" class="clearfix">
+		<a href="#">Home</a>
+		<nav>
+			<a href="#">About</a>
+			<%= link_to 'Keyhole Stories', posts_path %>
+			<a href="#">Instagram</a>
+			<a href="#">Contact</a>
+		</nav>
+	</header>
 
 <%= yield %>
+
+	<footer>
+		<hr>
+		<p>footer</p>
+		<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+		<a href="http://twitter.com/keyholedoughnut" target="_blank"><i class="fa fa-instagram"></i></a>
+		<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="fa fa-twitter-square"></i></a>		
+	</footer>
 
 </body>
 </html>
