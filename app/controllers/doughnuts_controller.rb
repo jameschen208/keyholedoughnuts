@@ -42,7 +42,7 @@ class DoughnutsController < ApplicationController
 		@doughnut = Doughnut.find(params[:id])
 	end
 	def doughnut_params
-		params.require(:doughnut).permit(:title, :description)
+		params.require(:doughnut).permit(:title, :description, :image)
 	end
 
 end
