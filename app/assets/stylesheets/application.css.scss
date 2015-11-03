@@ -1,1 +1,117 @@
 @import 'normalize';
+
+$dark: #424652;
+$white: #FFFFFF;
+$light: #9a9da4;
+$highlight: #6698FF;
+$border: #E9E9E9;
+
+#deleteme{
+	height: 2000px;
+}
+#main_navigation{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 110px;
+	font-size: 18px;
+	background-color: pink;
+	border-bottom: 1px solid black;
+	text-align: center;
+	nav{
+		:link{
+			color:black;
+			text-decoration: none;
+			font-size: 18px;
+			margin: 0 2.5rem;
+		}
+
+		:visited{
+			color:black;
+			text-decoration: none;
+			font-size: 18px;
+		}
+
+		:hover{
+			color: $highlight; 
+		}
+		#keyholelogo{
+		height: 100px;
+		}
+	}	
+}
+
+#navblock{
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 110px;
+	background-color: white;
+}
+
+hr{
+	width: 10%;
+	border: 1px solid $border;
+}
+
+/****** PARALLAX ******/
+.doughnutbox{
+	position: relative;
+	height: 600px;
+	z-index: -1;
+	background: url("doughnut1.jpg"){
+		size: cover;
+		repeat: no-repeat;
+		position: center center;
+		attachment: fixed;
+	}
+	#logo{
+		color: pink;
+		font-size: 50px;
+		text-align: center;
+		-webkit-text-stroke: 2px black;
+		top: 40%;
+		position: relative;
+		margin: auto;
+		height: 100px;
+	}
+	#foreground{
+		background-color: transparentize(pink, 0.4);
+		position: right bottom;
+		position: absolute;
+		left: 75%;
+		bottom: 25%;
+	}
+	#behind{
+		background-color: transparentize(pink, 0.4);
+		position: absolute;
+		left: 10%;
+		top: 10%;
+	}
+}
+
+/****** HOME PICTURE ******/
+
+
+/****** ABOUT US ******/
+
+.aboutwrapper{
+	max-width: 75%;	
+	margin: auto;
+	h1{
+		color: #ccc;
+		text-align: center;
+	}
+}
+
+footer{
+	position: fixed;
+	bottom: 0px;
+	left: 48%;
+	a{
+		color: pink;
+	}
+}
+
+

@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(window).scroll(function(){
+	
+	var wScroll = $(this).scrollTop();
+
+	$('#logo').css({
+		'transform' : 'translate(0px, '+ wScroll /2 +'%)'
+	});
+
+	$('#foreground').css({
+		'transform' : 'translate(0px, -'+ wScroll /2 +'%)'
+	});	
+});
