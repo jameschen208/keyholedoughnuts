@@ -1,1 +1,9 @@
-<h1>hello world</h1>
+<h1>Doughnut Blog</h1>
+<div>
+	<% @posts.each do |post| %>
+	<div>
+		<p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+		<h2><%= link_to post.title, post%></h2>
+	</div>
+	<% end %>
+</div>

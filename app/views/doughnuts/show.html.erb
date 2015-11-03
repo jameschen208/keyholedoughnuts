@@ -1,0 +1,8 @@
+<%= @doughnut.title %> <br>
+<%= @doughnut.description %>
+
+<br>
+<br>
+
+<%= link_to "Edit", edit_doughnut_path(@doughnut) %>
+<%= link_to "Delete", doughnut_path(@doughnut), method: :delete, data: {confirm: "Are you sure you want to delete this doughnut?"} %>

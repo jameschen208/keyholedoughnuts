@@ -1,0 +1,9 @@
+<h1>List of all Doughnuts</h1>
+<div>
+	<% @doughnuts.each do |doughnut| %>
+	<div>
+		<p class="date"><%= doughnut.created_at.strftime('%A, %B %d') %></p>
+		<h2><%= link_to doughnut.title, doughnut%></h2>
+	</div>
+	<% end %>
+</div>
