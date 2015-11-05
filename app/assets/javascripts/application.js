@@ -15,7 +15,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-$( document ).ready(function() {
+$( document ).ready(function(){
 	// PARALLAX
 	$(window).scroll(function(){
 		
@@ -35,14 +35,16 @@ $( document ).ready(function() {
 	$(".lightboxlink").click(function(e){
 		/***variable images***/
 		var image = $(e.currentTarget).data("img");
+		var desc = $(e.currentTarget).data("desc");
+		var title = $(e.currentTarget).data("title");
 		/***add the body elements***/
-		$("body").append("<div class='outerlight'><div class='innerlight'><img class='lightimg' src='"+image+"'></div></div>")
+		$("body").append("<div class='outerlight'><div class='innerlight'><img class='lightimg' src='"+image+"'><div class='lightword'><h1>"+title+"</h1><h2>"+desc+"</h2></div></div></div>")
 		/***center the innerbox***/
 			var page_height = $(window).height();
 			console.log(page_height)
 			var image_height = $('.lightimg').height();
 			console.log(image_height)
-			var image_offset = (page_height - 600)/2;
+			var image_offset = (page_height - 550)/2;
 			console.log(image_offset)
 			$('img.lightimg').parent().css('margin-top', image_offset);
 		/***remove lightbox***/

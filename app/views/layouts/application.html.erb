@@ -11,23 +11,25 @@
 <body>
 	<header id="main_navigation" class="clearfix">
 		<nav>
-			<a href="#">About</a>
-			<a href="#">Doughnuts</a>
-			<a href="<%= root_path %>"><%= image_tag 'keyholelogo.jpeg', :id => "keyholelogo" %></a>
-			<a href="#">Contact</a>
-			<%= link_to 'Blog', posts_path %>
+			<div >
+				<ul>
+				<li><a href="#" class="left">About</a></li>
+				<li><a href="#" class="left">Doughnuts</a></li>
+				<li><a href="<%= root_path %>"><%= image_tag 'keyholelogo.jpeg', :id => "keyholelogo" %></a></li>
+				<li><a href="#" class="right">Blog</a></li>
+				<li><a href="#" class="right">Contact</a></li>
+			</ul>
+			</div>
 		</nav>
 	</header>
 	<div id="navblock"></div>
 
 <%= yield %>
-	
-	<div id='deleteme'></div>
 
 	<footer>
 		<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="fa fa-facebook-official"></i></a>
 		<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="fa fa-instagram"></i></a>
-		<a href="http://twitter.com/keyholedoughnut" target="_blank"><i class="fa fa-twitter-square"></i></a>		
+		<a href="http://twitter.com/keyholedoughnut" target="_blank"><i class="fa fa-twitter-square"></i></a>
 	</footer>
 
 </body>
