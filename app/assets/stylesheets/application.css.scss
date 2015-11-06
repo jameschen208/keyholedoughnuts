@@ -116,7 +116,28 @@ footer{
 		}
 	}
 }
-
+	//********** ANCHORS
+	#about_anchor{
+	  display: block;
+	  height: 100px; 
+	  margin-top: -100px;
+	  visibility: hidden;
+	  z-index: -2;
+	}
+	#gallery_anchor{
+	  display: block;
+	  height: 98px; 
+	  margin-top: -98px;
+	  visibility: hidden;
+	  z-index: -2;
+	}
+	#blog_anchor{
+	  display: block;
+	  height: 100px; 
+	  margin-top: -100px;
+	  visibility: hidden;
+	  z-index: -2;
+	}
 //********** PARALLAX
 .doughnutbox#first{
 	position: relative;

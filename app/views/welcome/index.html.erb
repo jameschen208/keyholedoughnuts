@@ -11,7 +11,7 @@
 		Behind Doughnut Image Or Logo
 	</div> -->
 </div>
-
+<span id="about_anchor"></span>
 <div class="about_wrapper">
 	<div class="skinny_wrapper">
 		<h1>About Us</h1>
@@ -30,11 +30,12 @@
 
 <div class="doughnutbox" id="second">
 </div>
-<br>
-<hr>
-<hr>
-<br>
-<div class="doughnutgallery">
+<span id="gallery_anchor"></span>
+<div class="doughnutgallery skinny_wrapper">
+	<h1>Our pride and joy</h1>
+	<hr>
+	<hr>
+	<br>
 	<% @doughnuts.each do |doughnut| %>
 	<div class="doughnuts">
 			<%= link_to "javascript:;", class: "lightboxlink", data: { img: doughnut.image.url, desc: doughnut.description, title: doughnut.title } do %>
@@ -52,11 +53,11 @@
 <div class="doughnutbox" id="third">
 </div>
 <br>
-
+<span id="blog_anchor"></span>
 <div class="blog_wrapper skinny_wrapper clearfix">
-<hr>
-<hr>
 	<h1>Doughnut Blog</h1>
+	<hr>
+	<hr>
 	<div>
 		<% @posts.each do |post| %>
 		<div class="blog_post">
@@ -73,8 +74,10 @@
 <hr>
 <br>
 
-<div class="skinny_wrapper">
-	<h1>CONTACT US (mandrill)</h1>
+<div class="contact_us" id="contact_anchor">
+	<div class="skinny_wrapper">
+		<h1>CONTACT US (mandrill)</h1>
+	</div>
 </div>
 
 <br>

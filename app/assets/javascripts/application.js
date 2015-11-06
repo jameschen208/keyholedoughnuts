@@ -33,7 +33,7 @@ $( document ).ready(function(){
 		if(wScroll > $('.doughnutgallery').offset().top - ($(window).height() / 1.2 )){
 			// What ever is inside of this, it runs a function.
 			$('.doughnutgallery, .doughnuts').each(function(i){
-				
+
 				setTimeout(function(){
 					$('.doughnuts').eq(i).addClass('is-showing');
 				}, (700 * (Math.exp(i * 0.14))) - 700);
@@ -63,4 +63,37 @@ $( document ).ready(function(){
 			$(".outerlight").remove()
 		});
 	});
+
+	// function ImageCollection(images) {
+	//     this.images = images;
+	//     this.i = 0;
+	//     this.next = function(imgId) {
+	//     var img = document.getElementById(imgId);
+	//     this.i++;
+	//     if (this.i == images.length )
+	//         this.i = 0;
+	//         img.src = images[this.i];
+	//     }
+	//     this.prev = function(imgId) {
+	//     var img = document.getElementById(imgId);
+	//     this.i--;
+	//     if (this.i <= 0)
+	//          this.i = images.length -1;
+	//          img.src = images[this.i];
+	//     }
+	// }
+
+	// <img id='container' src="icono/antithese/preview.jpg" >
+	// <input type='button' value='next' onclick='ic1.next("container")' />
+	// <input type='button' value='prev' onclick='ic1.prev("container")' />
+
+
+
+
+
+
+
+
+
+
 });
