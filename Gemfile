@@ -14,6 +14,7 @@ gem 'paperclip', '~> 4.3', '>= 4.3.1'
 gem 'jquery-turbolinks'
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'friendly_id', '~> 5.1'
+gem 'will_paginate', '~> 3.0', '>= 3.0.7'
 
 
 group :development, :test do
