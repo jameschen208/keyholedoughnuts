@@ -38,7 +38,7 @@
 	<br>
 	<% @doughnuts.each do |doughnut| %>
 	<div class="doughnuts">
-			<%= link_to "javascript:;", class: "lightboxlink", data: { img: doughnut.image.url, desc: doughnut.description, title: doughnut.title } do %>
+			<%= link_to "javascript:;", class: "lightboxlink", data: { img: doughnut.image.url, desc: markdown(doughnut.description), title: doughnut.title } do %>
 			<%= image_tag doughnut.image.url(:medium) %>
 			<% end %>
 	</div>

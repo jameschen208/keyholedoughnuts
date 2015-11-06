@@ -5,7 +5,7 @@
 	<%= link_to "Delete", doughnut_path(@doughnut), method: :delete, data: {confirm: "Are you sure you want to delete this doughnut?"} %>
 	</div>
 	<div class="show_content">
-		<p><strong>Description:</strong> <%= @doughnut.description %></p>
+		<p><strong>Description:</strong> <%= markdown @doughnut.description %></p>
 		<p class="date"><strong>Created:</strong> <%= @doughnut.created_at.strftime('%A, %B %d') %></p>
 	</div>
 	<div id="show_image">

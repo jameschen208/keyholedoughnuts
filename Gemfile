@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'paperclip', '~> 4.3', '>= 4.3.1'
 gem 'jquery-turbolinks'
+gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 
 
 group :development, :test do
