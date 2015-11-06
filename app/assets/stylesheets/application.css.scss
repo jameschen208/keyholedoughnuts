@@ -340,6 +340,7 @@ footer{
 		:link{
 			color:black;				
 			font-size: 35px;
+			text-decoration: none;
 			margin: 0 1.5rem;
 			font-family: $shadows;
 		}
@@ -373,17 +374,18 @@ footer{
 			:hover{
 				color: $highlight; 
 			}
-		}	
+		}
+		p.date{
+			:hover{
+				color: none;
+			}
+		}
 	}
 
 //********** show
 	.show_wrapper{
 		padding: 0;
 		text-align: center;
-		.date{
-			margin: auto;
-
-		}
 		#show_image{
 			text-align: center;
 		}
@@ -411,5 +413,9 @@ footer{
 		font-size: 18px;
 		padding: 10px 0 40px 0;
 	}
-// 
+p.date{
+	:hover{
+		color: orange;
+	}
+} 
 

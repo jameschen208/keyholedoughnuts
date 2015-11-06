@@ -1,5 +1,6 @@
 <h1>Doughnut Blog</h1>
 <div id="index_wrapper" class="skinny_wrapper">
+	<%= link_to "New Post", new_post_path(@post) %>
 	<% @posts.each do |post| %>
 	<div>
 		<p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
