@@ -63,37 +63,4 @@ $( document ).ready(function(){
 			$(".outerlight").remove()
 		});
 	});
-
-	// function ImageCollection(images) {
-	//     this.images = images;
-	//     this.i = 0;
-	//     this.next = function(imgId) {
-	//     var img = document.getElementById(imgId);
-	//     this.i++;
-	//     if (this.i == images.length )
-	//         this.i = 0;
-	//         img.src = images[this.i];
-	//     }
-	//     this.prev = function(imgId) {
-	//     var img = document.getElementById(imgId);
-	//     this.i--;
-	//     if (this.i <= 0)
-	//          this.i = images.length -1;
-	//          img.src = images[this.i];
-	//     }
-	// }
-
-	// <img id='container' src="icono/antithese/preview.jpg" >
-	// <input type='button' value='next' onclick='ic1.next("container")' />
-	// <input type='button' value='prev' onclick='ic1.prev("container")' />
-
-
-
-
-
-
-
-
-
-
 });

@@ -1,5 +1,5 @@
 <h1>Doughnut Blog</h1>
-<div>
+<div id="index_wrapper" class="skinny_wrapper">
 	<% @posts.each do |post| %>
 	<div>
 		<p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
