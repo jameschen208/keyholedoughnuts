@@ -28,7 +28,18 @@ $( document ).ready(function(){
 		$('#foreground').css({
 			'transform' : 'translate(0px, -'+ wScroll /2 +'%)'
 		});	
-});
+	// DOUGHNUT GALLERY
+	// Look at how far gallery is from the top of the DOM
+		if(wScroll > $('.doughnutgallery').offset().top - ($(window).height() / 1.2 )){
+			// What ever is inside of this, it runs a function.
+			$('.doughnutgallery, .doughnuts').each(function(i){
+				
+				setTimeout(function(){
+					$('.doughnuts').eq(i).addClass('is-showing');
+				}, (700 * (Math.exp(i * 0.14))) - 700);
+			});
+		}
+	});
 
 	// LIGHTBOX
 

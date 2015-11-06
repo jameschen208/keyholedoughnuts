@@ -6,18 +6,21 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Salsa' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
 		<nav>
-			<div >
+			<div>
 				<ul>
-				<li><a href="#" class="left">About</a></li>
-				<li><a href="#" class="left">Doughnuts</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Doughnuts</a></li>
 				<li><a href="<%= root_path %>"><%= image_tag 'keyholelogo.jpeg', :id => "keyholelogo" %></a></li>
-				<li><a href="#" class="right">Blog</a></li>
-				<li><a href="#" class="right">Contact</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 			</div>
 		</nav>
