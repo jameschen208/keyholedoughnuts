@@ -39,10 +39,10 @@ class DoughnutsController < ApplicationController
 	private
 
 	def find_doughnut
-		@doughnut = Doughnut.find(params[:id])
+		@doughnut = Doughnut.friendly.find(params[:id])
 	end
 	def doughnut_params
-		params.require(:doughnut).permit(:title, :description, :image)
+		params.require(:doughnut).permit(:title, :description, :image, :slug)
 	end
 
 end
