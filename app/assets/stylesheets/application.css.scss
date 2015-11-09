@@ -49,6 +49,13 @@ hr{
 	border: 1px solid $border;
 }
 
+//********** NOTICES AND ALERTS
+
+.notice, .alert{
+	text-align: center;
+
+}
+
 //********** NAVIGATION
 
 #main_navigation{
@@ -201,10 +208,11 @@ footer{
 	position: relative;
 	height: 600px;
 	z-index: -1;
-	background: url("doughnut3.jpg"){
+	background: url("doughnut2.jpg"){
 		width: 100%;
 		height: 600px;
 		repeat: no-repeat;
+	
 		position: center center;
 		attachment: fixed;
 	}

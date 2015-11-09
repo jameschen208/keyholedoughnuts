@@ -26,13 +26,20 @@
 		</nav>
 	</header>
 	<div id="navblock"></div>
-
+ 	<% if notice %> 
+	 	<p class="notice"><%= notice %></p>
+	<% elsif alert %> 	
+	    <p class="alert"><%= alert %></p>
+	<% end %> 
 <%= yield %>
 
 	<footer>
 		<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="fa fa-facebook-official"></i></a>
 		<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="fa fa-instagram"></i></a>
 		<a href="http://twitter.com/keyholedoughnut" target="_blank"><i class="fa fa-twitter-square"></i></a>
+		<% if user_signed_in? %>
+			<%= link_to "sign out", destroy_user_session_path, method: :delete %>
+		<% end %>
 	</footer>
 
 </body>
