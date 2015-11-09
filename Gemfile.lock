@@ -100,7 +100,6 @@ GEM
     passenger (5.0.20)
       rack
       rake (>= 0.8.1)
-    pg (0.18.3)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -188,7 +187,6 @@ DEPENDENCIES
   jquery-turbolinks
   paperclip (~> 4.3, >= 4.3.1)
   passenger
-  pg
   rails (= 4.2.4)
   rails_12factor
   redcarpet (~> 3.3, >= 3.3.3)
