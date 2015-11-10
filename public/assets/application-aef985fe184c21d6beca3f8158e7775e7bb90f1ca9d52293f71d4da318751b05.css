@@ -1,0 +1,890 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/_normalize.css.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 14, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 18, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+h1 {
+  font-family: "Shadows Into Light", cursive;
+  color: #ccc;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* line 25, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.skinny_wrapper {
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 30, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.skinny_wrapper h1 {
+  margin-top: 0px;
+}
+
+/* line 37, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 43, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 47, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+hr {
+  width: 10%;
+  border: 1px solid #E9E9E9;
+}
+
+/* line 54, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.notice, .alert {
+  text-align: center;
+}
+
+/* line 61, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#main_navigation {
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  padding: 0px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  background-color: #FFFFFF;
+}
+/* line 71, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#main_navigation nav {
+  padding: 0px;
+  margin: 0 auto;
+}
+/* line 74, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#main_navigation nav ul {
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-left: -50px;
+}
+/* line 81, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#main_navigation nav li {
+  margin: 0 auto;
+  display: inline;
+}
+/* line 84, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#main_navigation nav li a {
+  color: black;
+  text-decoration: none;
+  font-size: 35px;
+  margin: 0 1.5rem;
+  font-family: "Shadows Into Light", cursive;
+}
+/* line 91, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#main_navigation nav li :visited {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* line 97, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#main_navigation nav li :hover {
+  color: pink;
+}
+/* line 100, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#main_navigation nav li #keyholelogo {
+  height: 80px;
+}
+
+/* line 107, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#navblock {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+
+/* line 115, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 48%;
+}
+/* line 119, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+footer a {
+  color: #9a9da4;
+}
+/* line 121, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+footer a :hover {
+  color: pink;
+}
+
+/* line 127, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#about {
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+  z-index: -2;
+}
+
+/* line 134, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#gallery {
+  display: block;
+  height: 98px;
+  margin-top: -98px;
+  visibility: hidden;
+  z-index: -2;
+}
+
+/* line 141, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#blog {
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+  z-index: -2;
+}
+
+/* line 148, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#contact {
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+  z-index: -2;
+}
+
+/* line 156, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.doughnutbox#first {
+  position: relative;
+  height: 100vh;
+  margin-bottom: 0px;
+  z-index: -1;
+  background: url("donutlogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-height: 100%;
+}
+/* line 168, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.doughnutbox#first #logo {
+  color: #FFFFFF;
+  font-size: 15vmin;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-stroke: .01px black;
+  top: 27%;
+  position: relative;
+  margin: 0 auto;
+  height: 100px;
+  z-index: -1;
+}
+/* line 181, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.doughnutbox#first #foreground {
+  background-color: rgba(255, 192, 203, 0.6);
+  position: right bottom;
+  position: absolute;
+  left: 75%;
+  bottom: 25%;
+}
+/* line 188, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.doughnutbox#first #behind {
+  background-color: rgba(255, 192, 203, 0.6);
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+/* line 195, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.doughnutbox#second {
+  position: relative;
+  height: 600px;
+  z-index: -1;
+  background: url("doughnut1.jpg");
+  background-width: 100%;
+  background-height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* line 207, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.doughnutbox#third {
+  position: relative;
+  height: 600px;
+  z-index: -1;
+  background: url("doughnut2.jpg");
+  background-width: 100%;
+  background-height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* line 222, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.about_wrapper {
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+/* line 232, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.doughnutgallery {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+/* line 237, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.doughnutgallery .doughnuts {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  opacity: 0;
+  transform: translate(30px);
+  transition: all 0.4s ease-in-out;
+}
+/* line 246, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.doughnutgallery .is-showing {
+  opacity: 1;
+  transform: translate(0px);
+}
+
+/* line 252, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.outerlight {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0%;
+  left: 0%;
+}
+
+/* line 262, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.innerlight {
+  text-align: center;
+  font-style: bold;
+}
+
+/* line 267, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.lightimg {
+  width: 45%;
+  position: top;
+  display: inline-block;
+}
+
+/* line 273, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.lightword {
+  width: 45%;
+  position: top;
+  display: inline-block;
+  color: white;
+  vertical-align: top;
+}
+
+/* line 282, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.blog_wrapper {
+  height: 85vh;
+}
+
+/* line 285, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.blog_post {
+  float: left;
+  margin: 0 auto;
+  width: 33.3333%;
+  text-align: center;
+}
+/* line 290, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.blog_post a {
+  color: black;
+  text-decoration: none;
+  font-size: 6vh;
+  margin: 0 1.5rem;
+  font-family: "Shadows Into Light", cursive;
+}
+/* line 297, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.blog_post :visited {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* line 303, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.blog_post :hover {
+  color: pink;
+}
+
+/* line 315, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 3em;
+  border: 2px solid #E9E9E9;
+  padding: 1em;
+  margin: .5em 0 2em 0;
+}
+
+/* line 324, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+textarea {
+  min-height: 20em;
+}
+
+/* line 328, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+input[type="submit"], .button {
+  outline: none;
+  background: transparent;
+  border: 2px solid #E9E9E9;
+  text-align: center;
+  font-size: 1em;
+  color: #424652;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+/* line 337, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+input[type="submit"]:hover, .button:hover {
+  border: 2px solid pink;
+  color: pink;
+}
+
+/* line 346, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#index_wrapper {
+  text-align: center;
+}
+/* line 348, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#index_wrapper :link {
+  color: black;
+  font-size: 35px;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-family: "Shadows Into Light", cursive;
+}
+/* line 355, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#index_wrapper :visited {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* line 360, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#index_wrapper :hover {
+  color: pink;
+}
+/* line 363, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#index_wrapper .doughnuts_index {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #E9E9E9;
+  margin-bottom: 5px;
+  padding: 1px;
+}
+/* line 370, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#index_wrapper .doughnuts_index :link {
+  color: black;
+  text-decoration: none;
+  font-size: 35px;
+  margin: 0 1.5rem;
+  font-family: "Shadows Into Light", cursive;
+}
+/* line 377, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#index_wrapper .doughnuts_index :visited {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* line 382, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#index_wrapper .doughnuts_index :hover {
+  color: pink;
+}
+/* line 387, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+#index_wrapper p.date :hover {
+  color: none;
+}
+
+/* line 394, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.show_wrapper {
+  padding: 0;
+  text-align: center;
+}
+/* line 397, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.show_wrapper #show_image {
+  text-align: center;
+}
+/* line 401, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.show_wrapper .edit_delete_link :link {
+  color: black;
+  text-decoration: none;
+  font-size: 35px;
+  margin: 0 1.5rem;
+  font-family: "Shadows Into Light", cursive;
+}
+/* line 408, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.show_wrapper .edit_delete_link :visited {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* line 413, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.show_wrapper .edit_delete_link :hover {
+  color: pink;
+}
+
+/* line 419, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+.show_content {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0 40px 0;
+}
+
+/* line 425, /home/ubuntu/keyholedoughnuts/app/assets/stylesheets/application.css.scss */
+p.date :hover {
+  color: orange;
+}
