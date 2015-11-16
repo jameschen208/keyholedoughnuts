@@ -1,6 +1,6 @@
 <div class="doughnutbox" id="first">
 	<div id="logo">
-		KEYHOLE DOUGHNUTS
+		keyhole doughnuts
 	</div>
 	<div id="background">
 	</div>
@@ -58,26 +58,50 @@
 	<h1>Doughnut Blog</h1>
 	<hr>
 	<hr>
-	<div>
-		<% @posts.each do |post| %>
+	<div id="row_one_blog">
 		<div class="blog_post">
-			<h2><%= link_to post.title, post%></h2>
-			<p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+			<h2><%= link_to @posts[-1].title, @posts[-1] %></h2>
 		</div>
-		<% end %>
+		<div class="blog_post">
+			<h2><%= link_to @posts[-2].title, @posts[-2] %></h2>
+		</div>
+		<div class="blog_post">
+			<h2><%= link_to @posts[-3].title, @posts[-3] %></h2>
+		</div>		
 	</div>
-
+	<div class="clearfix"></div>
+	<div id="row_two_blog">
+		<div class="blog_post">
+			<h2><%= link_to @posts[-4].title, @posts[-4] %></h2>
+		</div>
+		<div class="blog_post">
+			<h2><%= link_to @posts[-5].title, @posts[-5] %></h2>
+		</div>
+		<div class="blog_post">
+			<h2><%= link_to @posts[-6].title, @posts[-6] %></h2>
+		</div>		
+	</div>
 </div>
 
 <br>
 <hr>
-<hr>
+<div class="doughnutbox" id="fourth">
+</div>
+
 <br>
 <span id="contact"></span>
 <div class="contact_us">
 	<div class="skinny_wrapper">
-		<h1>CONTACT US (mandrill)</h1>
+		<h1>CONTACT US</h1>
+		<div id="email">
+			<%= form_tag("/mail", method: "post") do %>
+				<%= text_field_tag(:subject,'',:placeholder => "What's the subject of your email?") %>
+				<%= text_field_tag(:name,'', :placeholder => "What's your name?") %>
+				<%= text_field_tag(:text,'', :placeholder => "Write your text here") %>
+				<%= text_field_tag(:email,'', :placeholder => "What's the best email to reach you at? ") %>
+				<%= submit_tag("Doughnut be shy, email to us!") %>
+			<% end %>
+		</div>
 	</div>
 </div>
-
 <br>

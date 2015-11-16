@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :doughnuts
   get 'welcome/index'
   root 'welcome#index'
+  post '/mail', to: 'welcome#mail'
 end

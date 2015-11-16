@@ -6,17 +6,17 @@ $white: #FFFFFF;
 $light: #9a9da4;
 $highlight: pink;
 $border: #E9E9E9;
-$shadows: 'Shadows Into Light', cursive;
+$nixie: 'Nixie One', sans-serif;
+$amatic: 'Amatic SC', sans-serif;
 $lato: 'Lato', sans-serif;
-$salsa: 'Salsa', cursive;
 
 //********** Overarching CSS.SCSS
 body{
-	font-family: $lato;
+	font-family: $nixie;
 }
 
 h1{
-	font-family: $shadows;
+	font-family: $amatic;
 	color: #ccc;
 	text-align: center;
 	font-weight: bold;
@@ -86,7 +86,7 @@ hr{
 				text-decoration: none;
 				font-size: 35px;
 				margin: 0 1.5rem;
-				font-family: $shadows;
+				font-family: $amatic;
 			}
 			:visited{
 				color:black;
@@ -115,9 +115,10 @@ hr{
 footer{
 	position: fixed;
 	bottom: 0px;
-	left: 48%;
+	left: 47.2%;
 	a{
 		color: $light;
+		font-size: 25px;
 		:hover{
 			color: $highlight;
 		}
@@ -166,13 +167,12 @@ footer{
 		height: 100%;
 	}
 	#logo{
-		color: $white;
+		color: $dark;
 		font-size: 15vmin;
-		font-family: $shadows;
+		font-family: $amatic;
 		font-weight: bold;
 		text-align: center;
-		-webkit-text-stroke: .01px black;
-		top: 27%;
+		top: 30%;
 		position: relative;
 		margin: 0 auto;
 		height: 100px;
@@ -198,7 +198,6 @@ footer{
 	z-index: -1;
 	background: url(<%= asset_path 'doughnut1.jpg' %>){
 		width: 100%;
-		height: 600px;
 		repeat: no-repeat;
 		position: center center;
 		attachment: fixed;
@@ -213,6 +212,17 @@ footer{
 		height: 600px;
 		repeat: no-repeat;
 	
+		position: center center;
+		attachment: fixed;
+	}
+}
+.doughnutbox#fourth{
+	position: relative;
+	height: 600px;
+	z-index: -1;
+	background: url(<%= asset_path 'doughnut3.jpg' %>){
+		width: 100%;
+		repeat: no-repeat;	
 		position: center center;
 		attachment: fixed;
 	}
@@ -292,7 +302,7 @@ footer{
 		text-decoration: none;
 		font-size: 6vh;
 		margin: 0 1.5rem;
-		font-family: $shadows;
+		font-family: $amatic;
 	}
 	:visited{
 		color:black;
@@ -350,7 +360,7 @@ footer{
 			font-size: 35px;
 			text-decoration: none;
 			margin: 0 1.5rem;
-			font-family: $shadows;
+			font-family: $amatic;
 		}
 		:visited{
 			color:black;
@@ -372,7 +382,7 @@ footer{
 				text-decoration: none;
 				font-size: 35px;
 				margin: 0 1.5rem;
-				font-family: $shadows;
+				font-family: $amatic;
 			}
 			:visited{
 				color:black;
@@ -403,7 +413,7 @@ footer{
 				text-decoration: none;
 				font-size: 35px;
 				margin: 0 1.5rem;
-				font-family: $shadows;
+				font-family: $amatic;
 			}
 			:visited{
 				color:black;
