@@ -19,7 +19,6 @@ gem 'passenger'
 gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'pg'
 gem 'mandrill-api'
-# gem 'mandrill_mailer'
 
 
 group :development, :test do
