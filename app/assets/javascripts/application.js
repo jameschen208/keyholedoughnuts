@@ -16,6 +16,9 @@
 //= require turbolinks
 //= require_tree .
 $( document ).ready(function(){
+
+  
+
 	// PARALLAX
 	$(window).scroll(function(){
 		

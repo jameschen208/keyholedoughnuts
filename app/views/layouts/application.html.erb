@@ -3,28 +3,29 @@
 <head>
   <title>Keyhole</title>
   <%= favicon_link_tag "keyholeicon.png" %>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<header id="main_navigation" class="clearfix">
-		<nav>
-			<div>
-				<ul>
-				<li><a href="<%= root_path %>#about">About</a></li>
-				<li><a href="<%= root_path %>#gallery">Doughnuts</a></li>
-				<li><a href="<%= root_path %>"><%= image_tag 'keyholelogo.jpeg', :id => "keyholelogo" %></a></li>
-				<li><a href="<%= root_path %>#blog">Blog</a></li>
-				<li><a href="<%= root_path %>#contact">Contact</a></li>
-			</ul>
+	<div class="navbar-fixed">
+		<nav class="white" role="navigation" id="main_navigation">
+			<div class="col valign-wrapper">
+				<ul class="valign">
+					<li><a class="black-text" href="<%= root_path %>#about">About</a></li>
+					<li><a class="black-text" href="<%= root_path %>#gallery">Doughnuts</a></li>class=
+					<li><a id="nav-mobile" class="black-text hide-on-med-and-down" href="<%= root_path %>"><%= image_tag 'keyholelogo.jpeg', :class=> "responsive-img", :id => "keyholelogo" %></a></li>
+					<li><a class="black-text" href="<%= root_path %>#blog">Blog</a></li>
+					<li><a class="black-text" href="<%= root_path %>#contact">Contact</a></li>
+				</ul>
 			</div>
 		</nav>
-	</header>
-	<div id="navblock"></div>
+	</div>
  	<% if notice %> 
 	 	<p class="notice"><%= notice %></p>
 	<% elsif alert %> 	
@@ -32,14 +33,21 @@
 	<% end %> 
 <%= yield %>
 
-	<footer>
-		<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="fa fa-facebook-official"></i></a>
-		<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="fa fa-instagram"></i></a>
-		<a href="http://twitter.com/keyholedoughnut" target="_blank"><i class="fa fa-twitter-square"></i></a>
-		<% if user_signed_in? %>
-			<%= link_to "sign out", destroy_user_session_path, method: :delete %>
-		<% end %>
+	<footer class="">
+		<div class="valign">
+			<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+			<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="fa fa-instagram"></i></a>
+			<a href="http://twitter.com/keyholedoughnut" target="_blank"><i class="fa fa-twitter-square"></i></a>
+			<% if user_signed_in? %>
+				||<%= link_to "sign out", destroy_user_session_path, method: :delete %>
+				||<%= link_to "new doughnut", new_doughnut_path %>
+				||<%= link_to "new blog post", new_post_path %>
+			<% end %>
+		</div>
 	</footer>
-
+	  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../../dist/js/materialize.js"></script>
+  <script src="js/init.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@ gem 'passenger'
 gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'pg'
 gem 'mandrill-api'
-
+gem 'materialize-sass'
 
 group :development, :test do
   gem 'byebug'

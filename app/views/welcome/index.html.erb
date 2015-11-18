@@ -12,94 +12,101 @@
 	</div> -->
 </div>
 <span id="about"></span>
-<div class="about_wrapper">
-	<div class="skinny_wrapper">
-		<h1>About Us</h1>
-		
-		<hr>
-		<hr>
 
-		<p>Ice cream cupcake apple pie. Donut soufflé sweet. Cookie liquorice candy tootsie roll candy pie. Chocolate cake gingerbread pudding jelly cake jujubes danish cake. Sweet tiramisu jelly dragée. Cake icing croissant chocolate cake fruitcake. Cotton candy powder chocolate jujubes bonbon croissant candy sesame snaps. Dragée dessert cotton candy. <br> <br>
-		Wafer jelly-o marshmallow candy canes sweet jelly beans pastry carrot cake cake. Carrot cake pie pudding sweet roll pastry jelly beans brownie. Tart pastry jujubes sweet pudding bonbon jelly cookie carrot cake. Bear claw sweet roll chocolate cake bonbon cookie pastry sesame snaps oat cake tart. Gingerbread pudding dessert cheesecake icing cake bonbon. Gingerbread pastry pie caramels cupcake tootsie roll. Brownie apple pie jelly-o donut halvah. Carrot cake bonbon powder cupcake cake caramels jelly beans.</p>
-		<p>Ice cream cupcake apple pie. Donut soufflé sweet. Cookie liquorice candy tootsie roll candy pie. Chocolate cake gingerbread pudding jelly cake jujubes danish cake. Sweet tiramisu jelly dragée. Cake icing croissant chocolate cake fruitcake. Cotton candy powder chocolate jujubes bonbon croissant candy sesame snaps. Dragée dessert cotton candy. 
-			Ice cream cupcake apple pie. Donut soufflé sweet. Cookie liquorice candy tootsie roll candy pie. Chocolate cake gingerbread pudding jelly cake jujubes danish cake. Sweet tiramisu jelly dragée. Cake icing croissant chocolate cake fruitcake. Cotton candy powder chocolate jujubes bonbon croissant candy sesame snaps. Dragée dessert cotton candy. <br><br>Ice cream cupcake apple pie. Donut soufflé sweet. Cookie liquorice candy tootsie roll candy pie. Chocolate cake gingerbread pudding jelly cake jujubes danish cake. Sweet tiramisu jelly dragée. Cake icing croissant chocolate cake fruitcake. Cotton candy powder chocolate jujubes bonbon croissant candy sesame snaps. Dragée dessert cotton candy.</p>
-		<hr>
-		<hr>
+<div class="container">
+	<h1>About Us</h1>
+	<hr class="small">
+	<hr class="large">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 class="center">Who We Are</h5>
+            <p class="light">Halvah halvah apple pie. Toffee topping chupa chups cupcake tootsie roll oat cake wafer cupcake. Fruitcake pie macaroon gummies sugar plum bear claw jelly chocolate bar. Ice cream sweet cake icing cupcake jujubes tiramisu candy canes. </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 class="center">What We Make</h5>
+            <p class="light">allow bear claw sweet macaroon sweet roll topping croissant cotton candy. Ice cream tart macaroon jujubes dessert cupcake apple pie candy canes. Liquorice pie lollipop soufflé halvah oat cake chocolate b</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 class="center">Where We Deliver</h5>
+            <p class="light">eet chocolate pastry oat cake cake. Wafer jelly beans cake lollipop apple pie sesame snaps toffee liquorice wafer. Sweet roll cookie cake croissant tootsie roll chocolate gummies gummies. Halvah oat cake donut lemon drops cheesecake cake sweet. Ice cream cheesecake dragée cheesecake.</p>
+          </div>
+        </div>
+        <hr class="large">
+        <hr class="small">
+      </div>
+    </div>
+  </div>
+
+			
 	</div>
 </div>
 
-<div class="doughnutbox" id="second">
-</div>
+<div class="doughnutbox" id="second"></div>
+
 <span id="gallery"></span>
-<div class="doughnutgallery skinny_wrapper">
+<div class="container">
 	<h1>Our Pride and Joy</h1>
-	<hr>
-	<hr>
+		<hr class="small">
+		<hr class="large">
 	<br>
-	<% @doughnuts.each do |doughnut| %>
-	<div class="doughnuts">
-			<%= link_to "javascript:;", class: "lightboxlink", data: { img: doughnut.image.url, desc: markdown(doughnut.description), title: doughnut.title } do %>
-			<%= image_tag doughnut.image.url(:medium) %>
-			<% end %>
+	<div>
+		<% @doughnuts.each do |doughnut| %>
+			<img class="materialboxed doughnut" data-caption="<%= doughnut.title %>" width="100%" src="<%= doughnut.image.url %>">
+		<% end %>
 	</div>
-	<% end %>
-	<br>
-	<br>
-	<hr>
-	<hr>
 	<br>
 </div>
-
-<div class="doughnutbox" id="third">
-</div>
+<div class="clearfix"></div>
+<div class="doughnutbox" id="third"></div>
 <br>
+
 <span id="blog"></span>
-<div class="blog_wrapper skinny_wrapper clearfix">
-	<h1>Doughnut Blog</h1>
-	<hr>
-	<hr>
-	<div id="row_one_blog">
-		<div class="blog_post">
-			<h2><%= link_to @posts[-1].title, @posts[-1] %></h2>
-		</div>
-		<div class="blog_post">
-			<h2><%= link_to @posts[-2].title, @posts[-2] %></h2>
-		</div>
-		<div class="blog_post">
-			<h2><%= link_to @posts[-3].title, @posts[-3] %></h2>
-		</div>		
-	</div>
-	<div class="clearfix"></div>
-	<div id="row_two_blog">
-		<div class="blog_post">
-			<h2><%= link_to @posts[-4].title, @posts[-4] %></h2>
-		</div>
-		<div class="blog_post">
-			<h2><%= link_to @posts[-5].title, @posts[-5] %></h2>
-		</div>
-		<div class="blog_post">
-			<h2><%= link_to @posts[-6].title, @posts[-6] %></h2>
-		</div>		
-	</div>
+
+<div class="clearfix">
+ <div class="container">
+ 	<h1>Doughnut Blog</h1>
+	<hr class="small">
+	<hr class="large">
+    <div class="col s12 m6">
+    	<% @posts.each do |post| %>
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title"><%= link_to post.title, post%></span>
+          <p><%= post.created_at.strftime('%A, %B %d') %></p>          
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <hr class="large">
+	<hr class="small">
+  </div>
 </div>
 
+<div class="doughnutbox" id="fourth"></div>
 <br>
-<hr>
-<div class="doughnutbox" id="fourth">
-</div>
 
-<br>
 <span id="contact"></span>
-<div class="contact_us">
-	<div class="skinny_wrapper">
+
+<div>
+	<div class="container">
 		<h1>CONTACT US</h1>
+		<hr class="small">
+		<hr class="large">
 		<div id="email">
 			<%= form_tag("/mail", method: "post") do %>
 				<%= text_field_tag(:subject,'',:placeholder => "What's the subject of your email?") %>
 				<%= text_field_tag(:name,'', :placeholder => "What's your name?") %>
 				<%= text_field_tag(:text,'', :placeholder => "Write your text here") %>
 				<%= text_field_tag(:email,'', :placeholder => "What's the best email to reach you at? ") %>
-				<%= submit_tag("Doughnut be shy, email to us!") %>
+				<%= submit_tag("Doughnut be shy, email us!") %>
 			<% end %>
 		</div>
 	</div>
