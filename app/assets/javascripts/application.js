@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require_tree .
 $( document ).ready(function(){
+
 	$(window).scroll(function(){
 
 		var wScroll = $(this).scrollTop();
@@ -28,4 +29,5 @@ $( document ).ready(function(){
 			'transform' : 'translate(-'+ wScroll /6+'%, 0px)'
 		});
 	});
+	$(".button-collapse").sideNav();
 });
