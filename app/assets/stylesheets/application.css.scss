@@ -63,6 +63,7 @@ ul li a{
 }
 	ul li a:hover{
 		text-decoration: underline;
+		background: rgba(255,0,0,0);
 	}
 
 .keyhole-logo-row{
@@ -180,6 +181,10 @@ h5.first{
 }
 input:active{
 	border-bottom: red;
+}
+
+.text-height{
+	height: 150px;
 }
 
 //********** BACKEND
