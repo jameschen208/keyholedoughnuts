@@ -1,0 +1,140 @@
+@import 'normalize';
+
+//********** Pallet Town
+$lightpurple: #e9ddff;
+$darkpurple: #370b3d;
+$lightcomple: #AD607C;
+$lighterdarkpurple: #642f6c;
+
+
+//********** OVERARCHING CSS
+body{
+	background-color: $lightpurple;
+	font-family: 'cochin', sans-serif;
+	color: $darkpurple;
+	text-align: justify;
+}
+p{
+	font-size: 20px;
+	color: $lighterdarkpurple;
+}
+
+hr{
+	width: 250px;
+	color: $darkpurple;
+}
+
+ .standout{
+	color: $lightcomple;
+	font-weight: bold;
+ }
+
+//********** NOTICES AND ALERTS
+
+.notice{
+	text-align: center;
+}
+.alert{
+	text-align: center;
+}
+
+//********** NAVIGATION
+nav{
+	height: 175px;
+	background-color: $lightpurple;
+}
+
+.leftnav{
+	border-bottom: 1px solid $darkpurple;
+	width: 20%;
+	margin-top: 30px;
+	margin-left: 100px;
+}
+
+.rightnav{
+	border-bottom: 1px solid $darkpurple;
+	width: 20%;
+	margin-top: 30px;
+	margin-right: 100px;
+}
+
+ul li a{
+	color: $darkpurple;
+}
+	ul li a:hover{
+		text-decoration: underline;
+	}
+
+.keyhole-logo-row{
+	height: 140px;
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+
+#icons{
+	position: fixed;
+	bottom: 10px;
+	right:100px;
+}
+.social-media{
+	font-size: 40px;
+	z-index: 101;
+}
+
+.social-media	:hover{
+	color: $darkpurple;
+}
+
+
+//********** INDEX
+.index{
+	
+}
+h2.home{
+	opacity: 1;
+	margin-bottom: -50px;
+}
+h3.home{
+	opacity: 0.8;
+}
+h4.home{
+	opacity: 0.6;
+}
+h5.home{
+	opacity: 0.4;
+}
+h5.first{
+	opacity: 0.3;
+	margin-top: 20px;
+}
+//********** ABOUT US
+
+.slider .indicators .indicator-item {
+  background-color: white;
+  border: 1px solid $lightpurple;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+  background-color: $lightpurple;
+}
+.slider {
+  margin: 0 auto;
+  margin-bottom: -20px;
+}
+.slider .indicators {
+  bottom: 50px;
+  z-index: 100;
+  /* text-align: left; */
+}
+
+.slider-caption{
+	color: $darkpurple;
+}
+
+//********** FLAVORS
+
+//********** ORDER
+
+//********** CONTACT US

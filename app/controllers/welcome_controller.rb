@@ -5,6 +5,17 @@ class WelcomeController < ApplicationController
 
 	end
 
+	def about
+
+	end
+
+	def about
+		
+	end
+	
+	def about
+		
+	end
 	def mail
 		require 'mandrill'
 		msg = Mandrill::API.new

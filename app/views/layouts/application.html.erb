@@ -3,52 +3,59 @@
 <head>
   <title>Keyhole</title>
   <%= favicon_link_tag "keyholeicon.png" %>
+<!-- mobile -->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<!--   fontawesome -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  	
+<!-- materialize -->	
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-	<link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
-	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+<!-- fonts -->
+	
+<!-- rails -->
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
 </head>
-<body>
-	<div class="navbar-fixed">
-		<nav class="white" role="navigation" id="main_navigation">
-			<div class="col valign-wrapper">
-				<ul class="valign">
-					<li><a class="black-text" href="<%= root_path %>#about">About</a></li>
-					<li><a class="black-text" href="<%= root_path %>#gallery">Doughnuts</a></li>class=
-					<li><a id="nav-mobile" class="black-text hide-on-med-and-down" href="<%= root_path %>"><%= image_tag 'keyholelogo.jpeg', :class=> "responsive-img", :id => "keyholelogo" %></a></li>
-					<li><a class="black-text" href="<%= root_path %>#blog">Blog</a></li>
-					<li><a class="black-text" href="<%= root_path %>#contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
- 	<% if notice %> 
-	 	<p class="notice"><%= notice %></p>
-	<% elsif alert %> 	
-	    <p class="alert"><%= alert %></p>
-	<% end %> 
-<%= yield %>
 
-	<footer class="">
-		<div class="valign">
-			<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="fa fa-facebook-official"></i></a>
-			<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="fa fa-instagram"></i></a>
-			<a href="http://twitter.com/keyholedoughnut" target="_blank"><i class="fa fa-twitter-square"></i></a>
+<body>
+	<nav class="z-depth-0">
+		<div class="nav-wrapper">
+			<div class="row keyhole-logo-row">
+				<a class="brand-logo center" href="<%= root_path %>"><%= image_tag("keyhole-logo.png", height:"140") %></a>
+			</div>
+			<div class="row">
+				<div class="left leftnav hide-on-med-and-down"></div>
+				<ul class="brand-logo center hide-on-small-and-down">
+					<li><a href="<%= welcome_about_path %>">ABOUT US</a></li>
+					<li><a href="#">FLAVORS</a></li>
+					<li><a href="<%= welcome_order_path %>">ORDER</a></li>
+					<li><a href="<%= welcome_contact_path %>">CONTACT US</a></li>
+				</ul>
+				<div class="right rightnav hide-on-med-and-down"></div>
+			</div>
+		</div>
+	</nav>
+	
+<%= yield %>
+	
+	<div class="container" id="icons">
+		<div class="right-align">
+			<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="social-media fa fa-facebook-official white-text"></i></a>
+			<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="social-media fa fa-instagram white-text"></i></a>
+			<a href="http://twitter.com/keyholedoughnut" target="_blank"><i class="social-media fa fa-twitter-square white-text"></i></a>
+
 			<% if user_signed_in? %>
 				||<%= link_to "sign out", destroy_user_session_path, method: :delete %>
 				||<%= link_to "new doughnut", new_doughnut_path %>
-				||<%= link_to "new blog post", new_post_path %>
 			<% end %>
 		</div>
-	</footer>
-	  <!--  Scripts-->
+	</div>
+
+
+
+<!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="../../dist/js/materialize.js"></script>
   <script src="js/init.js"></script>

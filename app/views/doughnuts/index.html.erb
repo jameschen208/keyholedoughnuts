@@ -1,14 +1,10 @@
-<h1>List of all Doughnuts</h1>
-<div id="index_wrapper" class="doughnutgallery">
-	<%= link_to "Create Doughnut", new_doughnut_path(@doughnut) %>
-	<br><br>
+<div class="container">
 	<% @doughnuts.each do |doughnut| %>
-	<div class="doughnuts_index">
+	<!-- <div>
 		
 		<h2><%= link_to doughnut.title, doughnut%></h2>
 		<%= image_tag doughnut.image.url(:thumbnail) %>
-	</div>
+	</div> -->
 	
 	<% end %>
 </div>
-<br><br>
