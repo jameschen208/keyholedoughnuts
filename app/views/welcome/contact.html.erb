@@ -1,3 +1,14 @@
-<div class="container">
-	CONTACT US
+<div class="container contact">
+	<h1 class="header center">Contact Us</h1>
+	<p class="center">For catering inquiries or custom orders, please email us using the following form.</p>
+	<p class="center">Please include the date of your event in your subject line.</p>
+	<div>
+		<%= form_tag("/mail", method: "post") do %>
+			<%= text_field_tag(:subject,'',:placeholder => "What's the subject of your email?") %>
+			<%= text_field_tag(:name,'', :placeholder => "What's your name?") %>
+			<%= text_field_tag(:text,'', :placeholder => "Write your text here") %>
+			<%= text_field_tag(:email,'', :placeholder => "What's the best email to reach you at? ") %>
+		<%= submit_tag("Doughnut be shy, email us!") %>
+		<% end %>
+	</div>
 </div>

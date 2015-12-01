@@ -6,7 +6,6 @@ $darkpurple: #370b3d;
 $lightcomple: #AD607C;
 $lighterdarkpurple: #642f6c;
 
-
 //********** OVERARCHING CSS
 body{
 	background-color: $lightpurple;
@@ -17,6 +16,7 @@ body{
 p{
 	font-size: 20px;
 	color: $lighterdarkpurple;
+	line-height: 125%;
 }
 
 hr{
@@ -66,9 +66,13 @@ ul li a{
 	}
 
 .keyhole-logo-row{
-	height: 140px;
+	height: 200px;
 	margin-bottom: 0px;
 	margin-top: 20px;
+}
+
+.second-row{
+	height: 40px;
 }
 
 #icons{
@@ -76,19 +80,29 @@ ul li a{
 	bottom: 10px;
 	right:100px;
 }
+
 .social-media{
 	font-size: 40px;
 	z-index: 101;
+}
+
+.mobile-icons{
+	font-size: 40px;
+	margin-top: 20px;
+	margin-bottom: -20px;
 }
 
 .social-media	:hover{
 	color: $darkpurple;
 }
 
+.mobile-menu{
+	font-size: 50px;
+}
 
 //********** INDEX
 .index{
-	
+	margin-top: 90px;
 }
 h2.home{
 	opacity: 1;
@@ -105,10 +119,23 @@ h5.home{
 }
 h5.first{
 	opacity: 0.3;
-	margin-top: 20px;
+}
+
+.left-doughnut{
+	position: fixed;
+	left:0px;
+	top:150px;
+}
+
+.right-doughnut{
+	position: fixed;
+	right:0px;
+	top:150px;
 }
 //********** ABOUT US
-
+.about{
+	margin-top: 90px;
+}
 .slider .indicators .indicator-item {
   background-color: white;
   border: 1px solid $lightpurple;
@@ -134,7 +161,32 @@ h5.first{
 }
 
 //********** FLAVORS
-
+.flavors{
+	margin-top: 50px;
+}
+.card{
+	background-color: $lighterdarkpurple;
+}
 //********** ORDER
-
+.order{
+	margin-top: 90px;
+}
 //********** CONTACT US
+.contact{
+	margin-top: 90px;
+}
+::-webkit-input-placeholder {
+   color: $darkpurple;
+}
+input:active{
+	border-bottom: red;
+}
+
+//********** BACKEND
+.show{
+	margin-top:90px
+}
+
+.edit{
+	margin-top:90px
+}

@@ -1,10 +1,36 @@
-<div class="container">
-	<% @doughnuts.each do |doughnut| %>
-	<div>
-		
-		<h2><%= link_to doughnut.title, doughnut%></h2>
-
+<div class="container flavors">
+	<div class="section">
+		<div class="row">
+			<h2 class="center header">Sweet</h2>
+			<% @sweet.each do |doughnut| %>
+			<div class="col s12 m6">
+				<div class="card z-depth-2">
+					<div class="card-content white-text">
+						<span class="card-title"><%= doughnut.title %></span>
+						<p class="purple-text text-lighten-3"><%= doughnut.description %></p>
+						<% if user_signed_in? %>
+							<%= link_to "go to edit", doughnut %>
+						<% end %>
+					</div>
+				</div>
+			</div>
+			<% end %>
+		</div>	
+		<div class="row">
+			<h2 class="center header">Savory</h2>
+			<% @savory.each do |doughnut| %>
+			<div class="col s12 m6">
+				<div class="card z-depth-2">
+					<div class="card-content white-text">
+						<span class="card-title"><%= doughnut.title %></span>
+						<p class="purple-text text-lighten-3"><%= doughnut.description %></p>
+						<% if user_signed_in? %>
+							<%= link_to "go to edit", doughnut %>
+						<% end %>
+					</div>
+				</div>
+			</div>
+			<% end %>
+		</div>
 	</div>
-	
-	<% end %>
 </div>

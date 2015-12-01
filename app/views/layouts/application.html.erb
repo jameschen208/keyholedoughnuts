@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 <!-- fonts -->
-	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- rails -->
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -20,27 +20,40 @@
 </head>
 
 <body>
+	<a class="hide-on-large-only"href="<%= root_path %>#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons black-text mobile-menu">menu</i></a>
 	<nav class="z-depth-0">
 		<div class="nav-wrapper">
 			<div class="row keyhole-logo-row">
-				<a class="brand-logo center" href="<%= root_path %>"><%= image_tag("keyhole-logo.png", height:"140") %></a>
+				<a class="brand-logo center" href="<%= root_path %>"><%= image_tag("keyhole-logo.png", height:"200") %></a>
 			</div>
-			<div class="row">
+			<div class="row second-row">
 				<div class="left leftnav hide-on-med-and-down"></div>
-				<ul class="brand-logo center hide-on-small-and-down">
+				<ul class="brand-logo center hide-on-med-and-down">
 					<li><a href="<%= welcome_about_path %>">ABOUT US</a></li>
 					<li><a href="<%= doughnuts_path %>">FLAVORS</a></li>
 					<li><a href="<%= welcome_order_path %>">ORDER</a></li>
 					<li><a href="<%= welcome_contact_path %>">CONTACT US</a></li>
 				</ul>
 				<div class="right rightnav hide-on-med-and-down"></div>
+
+				<ul class="side-nav" id="mobile-nav">
+					<li><a href="<%= welcome_about_path %>">ABOUT US</a></li>
+					<li><a href="<%= doughnuts_path %>">FLAVORS</a></li>
+					<li><a href="<%= welcome_order_path %>">ORDER</a></li>
+					<li><a href="<%= welcome_contact_path %>">CONTACT US</a></li>
+				</ul>
 			</div>
+		</div>
+		<div class="container center-align hide-on-large-only mobile-icons">
+			<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="fa fa-facebook-official white-text"></i></a>
+			<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="fa fa-instagram white-text"></i></a>
+			<a href="http://twitter.com/keyholedoughnut" target="_blank"><i class="fa fa-twitter-square white-text"></i></a>
 		</div>
 	</nav>
 	
 <%= yield %>
 	
-	<div class="container" id="icons">
+	<div class="container hide-on-small-and-down" id="icons">
 		<div class="right-align">
 			<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="social-media fa fa-facebook-official white-text"></i></a>
 			<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="social-media fa fa-instagram white-text"></i></a>
@@ -53,7 +66,13 @@
 		</div>
 	</div>
 
+	<div class="left-doughnut hide-on-small-and-down">
+		<%= image_tag("doughnut_background_right", height:"200") %>
+	</div>
 
+	<div class="right-doughnut hide-on-small-and-down">
+		<%= image_tag("doughnut_background_left", height:"200") %>
+	</div>
 
 <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

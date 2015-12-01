@@ -1,15 +1,15 @@
-<div class="show_wrapper skinny_wrapper">
-	<h1><strong>Name:</strong> <%= @doughnut.title %></h1>
-	<div class="edit_delete_link">
+<div class="container show">
+	<h1 class="center"><strong>Name:</strong> <%= @doughnut.title %></h1>
+	<div class="center">
 	<%= link_to "Edit", edit_doughnut_path(@doughnut) %>
 	<%= link_to "Delete", doughnut_path(@doughnut), method: :delete, data: {confirm: "Are you sure you want to delete this doughnut?"} %>
 	</div>
-	<div class="show_content">
-		<p><strong>Description:</strong> <%= markdown @doughnut.description %></p>
-		<p class="date"><strong>Created:</strong> <%= @doughnut.created_at.strftime('%A, %B %d') %></p>
+	<div class="center">
+		<p><strong>Description:</strong><%= markdown @doughnut.description %></p>
+		<p class="date"><strong>Created:</strong><%= @doughnut.created_at.strftime('%A, %B %d') %></p>
 	</div>
-	<div id="show_image">
-		<%= image_tag @doughnut.image.url(:medium) %>
+	<div class="center">
+		<%= image_tag @doughnut.image.url(:large) %>
 	</div>
 	<br>
 	<br>

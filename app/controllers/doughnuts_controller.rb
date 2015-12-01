@@ -3,6 +3,8 @@ class DoughnutsController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 	def index
 		@doughnuts = Doughnut.all.order("created_at desc")
+		@savory = Doughnut.where(doughnut_type: 'Savory')
+		@sweet = Doughnut.where(doughnut_type: 'Sweet')
 	end
 
 	def new
@@ -43,7 +45,7 @@ class DoughnutsController < ApplicationController
 		@doughnut = Doughnut.friendly.find(params[:id])
 	end
 	def doughnut_params
-		params.require(:doughnut).permit(:title, :description, :image, :slug)
+		params.require(:doughnut).permit(:title, :description, :image, :doughnut_type, :slug)
 	end
 
 end
