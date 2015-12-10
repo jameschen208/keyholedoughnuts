@@ -21,12 +21,16 @@ $( document ).ready(function(){
 
 		var wScroll = $(this).scrollTop();
 
-		$('.right-doughnut').css({
-			'transform' : 'translate('+ wScroll /6+'%, 0px)'
-		});
+		// $('.right-doughnut').css({
+		// 	'transform' : 'translate('+ wScroll /6+'%, 0px)'
+		// });
 
-		$('.left-doughnut').css({
-			'transform' : 'translate(-'+ wScroll /6+'%, 0px)'
+		// $('.left-doughnut').css({
+		// 	'transform' : 'translate(-'+ wScroll /6+'%, 0px)'
+		// });
+
+		$('.bottom-doughnut').css({
+			'transform' : 'translate(-50%, '+ wScroll /8+'%)'
 		});
 	});
 	$(".button-collapse").sideNav();

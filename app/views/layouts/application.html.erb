@@ -66,9 +66,9 @@
 	
 	<div class="container hide-on-med-and-down" id="icons">
 		<div class="right-align">
-			<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="social-media fa fa-facebook-official white-text"></i></a>
-			<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="social-media fa fa-instagram white-text"></i></a>
-			<a href="http://twitter.com/keyholedoughnut" target="_blank"><i class="social-media fa fa-twitter-square white-text"></i></a>
+			<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="social-media fa fa-facebook-official"></i></a>
+			<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="social-media fa fa-instagram"></i></a>
+			<a href="http://twitter.com/keyholedoughnut" target="_blank"><i class="social-media fa fa-twitter-square"></i></a>
 
 			<% if user_signed_in? %>
 				||<%= link_to "sign out", destroy_user_session_path, method: :delete %>
@@ -77,12 +77,8 @@
 		</div>
 	</div>
 
-	<div class="left-doughnut hide-on-small-and-down">
-		<%= image_tag("doughnut_right.jpg", height:"200") %>
-	</div>
-
-	<div class="right-doughnut hide-on-small-and-down">
-		<%= image_tag("doughnut_left.jpg", height:"200") %>
+	<div class="bottom-doughnut">
+		<%= image_tag("doughnut_bottom.png", height:"175") %>
 	</div>
 
 <!--  Scripts-->
