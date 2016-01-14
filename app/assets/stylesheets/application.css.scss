@@ -6,6 +6,15 @@ $darkpurple: #370b3d;
 $lightcomple: #AD607C;
 $lighterdarkpurple: #642f6c;
 
+
+//********** Final Changes before WP
+.button{
+	border-radius: 25px;
+	border: 1px $lighterdarkpurple solid;
+	color: $darkpurple;
+	text-transform: lowercase;
+	display: inline-block;
+}
 //********** OVERARCHING CSS
 body{
 	background-color: $lightpurple;

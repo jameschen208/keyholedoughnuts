@@ -32,39 +32,39 @@
 
 <body>
 	<nav class="z-depth-0">
-		<a href="<%= root_path %>#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+		<!-- <a href="<%= root_path %>#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a> -->
 		<div class="nav-wrapper">
 			<div class="row keyhole-logo-row">
 				<a class="brand-logo center" href="<%= root_path %>"><%= image_tag("keyhole-logo.png", height:"200") %></a>
 			</div>
 			<div class="row second-row">
 				<div class="left leftnav hide-on-med-and-down"></div>
-				<ul class="brand-logo center hide-on-med-and-down">
+				<!-- <ul class="brand-logo center hide-on-med-and-down">
 					<li><a href="<%= welcome_about_path %>">ABOUT US</a></li>
 					<li><a href="<%= doughnuts_path %>">FLAVORS</a></li>
 					<li><a href="<%= welcome_order_path %>">ORDER</a></li>
 					<li><a href="<%= welcome_contact_path %>">CONTACT US</a></li>
-				</ul>
+				</ul> -->
+				<div class="brand-logo center">
+					<p><a href="http://goo.gl/forms/BlZHF57cRs"class="waves-effect waves-light btn transparent button" target="_blank">order now</a>
+					<a href="<%= welcome_contact_path %>"class="waves-effect waves-light btn transparent button">join our mailing list</a></p>
+				</div>
+
 				<div class="right rightnav hide-on-med-and-down"></div>
 
-				<ul class="side-nav" id="mobile-nav">
+				<!-- <ul class="side-nav" id="mobile-nav">
 					<li><a href="<%= welcome_about_path %>">ABOUT US</a></li>
 					<li><a href="<%= doughnuts_path %>">FLAVORS</a></li>
 					<li><a href="<%= welcome_order_path %>">ORDER</a></li>
 					<li><a href="<%= welcome_contact_path %>">CONTACT US</a></li>
-				</ul>
+				</ul> -->
 			</div>
-		</div>
-		<div class="container center-align hide-on-large-only mobile-icons">
-			<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="fa fa-facebook-official white-text"></i></a>
-			<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="fa fa-instagram white-text"></i></a>
-			<a href="http://twitter.com/keyholedoughnut" target="_blank"><i class="fa fa-twitter-square white-text"></i></a>
 		</div>
 	</nav>
 	
 <%= yield %>
 	
-	<div class="container hide-on-med-and-down" id="icons">
+	<div class="container" id="icons">
 		<div class="right-align">
 			<a href="https://www.facebook.com/keyholedoughnuts/" target="_blank"><i class="social-media fa fa-facebook-official"></i></a>
 			<a href="https://instagram.com/keyholedoughnuts/" target="_blank"><i class="social-media fa fa-instagram"></i></a>
